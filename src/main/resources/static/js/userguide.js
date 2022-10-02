@@ -1,4 +1,5 @@
 const changeIcon = document.querySelector('.change');
+//点击事件，更换图片逻辑：先调用接口，获取后端数据，然后写一个新建li标签的方法，后面把获取到的每个body中的元素内容放到新建li标签里面
 changeIcon.addEventListener('click', function() {
     fetch('/singer/random')
       .then(function(response) {
